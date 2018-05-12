@@ -68,6 +68,11 @@ Ejemplo:
 """
 
 class Translator(object):
+    """Class to provide !t command
+
+    Parameters:
+        bot: commands.Bot
+    """
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
