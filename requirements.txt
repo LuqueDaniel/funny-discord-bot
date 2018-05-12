@@ -1,0 +1,5 @@
+# Discord API
+discord.py[voice]
+
+# Google Translate API
+googletrans
