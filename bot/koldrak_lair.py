@@ -34,10 +34,10 @@ EVENT_SCHEDULE = (
     (time(19, 0, 0), time(19, 0, 1)),
     (time(22, 0, 0), time(22, 0, 1))
 )
-PRESTART_MESSAGE = ("@here En 10 minutos podreis ir entrando a Koldrak. "
+PRESTART_MESSAGE = ("En 10 minutos podreis ir entrando a Koldrak. "
                     "Y recordad, si vais en party, pasad gemas; ¡que luego "
                     "hay que esperaros!")
-START_MESSAGE = ("@here Teneis 10 minutos para entrar a Koldrak; a ver si "
+START_MESSAGE = ("Teneis 10 minutos para entrar a Koldrak; a ver si "
                  "sois tan pros como para sacar el cofre premium, ¡COMO YO!")
 
 # Embed
@@ -61,7 +61,7 @@ async def koldrak(ctx):
 
 
 async def event_koldrak_lair(bot):
-    """This function notify members when queue for Koldrak Lair are ready.
+    """Notify members when queue for Koldrak Lair are ready.
 
     Also send a message 10 minutes before queue are available.
     """

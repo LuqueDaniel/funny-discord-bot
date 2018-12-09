@@ -22,7 +22,7 @@ from discord.ext import commands
 
 @commands.command(pass_context=True)
 async def ignorante(ctx, user):
-    """This function send a meme to an user.
+    """Send a meme to an user.
 
     Args:
         ctx: Bot Context

@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with mariano-bot. If not, see <http://www.gnu.org/licenses/>.
 
-"""This module contains reusable code.
+"""Module contains reusable code.
 
 Functions:
     first_text_channel() -- Returns the first text channel in which the bot can
@@ -24,12 +24,12 @@ import discord
 
 
 def first_text_channel(server: discord.Server) -> discord.Channel:
-    """Returns the first text channel in which the bot can send messages.
+    """Return the first text channel in which the bot can send messages.
 
-    Parameters:
+    Parameters
         server (obj): discord.server
 
-    Returns:
+    Returns
         discord.Channel: first text channel.
     """
     for c in server.channels:

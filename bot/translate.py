@@ -68,11 +68,12 @@ Ejemplo:
 """
 
 class Translator(object):
-    """Class to provide !t command
+    """Class to provide !t command.
 
-    Parameters:
+    Parameters
         bot: commands.Bot
     """
+
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
@@ -91,7 +92,6 @@ class Translator(object):
             tr = googletrans.Translator().translate(' '.join(args), dest=dest)
             result = f"{ctx.message.author.mention}\n`{tr.origin}`\n{tr.text}"
         await ctx.bot.say(result)
-
 
     @t.error
     async def t_error(self, ctx, error):
